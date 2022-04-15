@@ -1,5 +1,11 @@
 #Build Target folder
 FROM maven:3.8.4-jdk-11 as build
+#WORKDIR /target
+#COPY pom.xml /target
+#COPY target /target
+#COPY . /target
+#RUN mvn clean package
+
 
 WORKDIR /app
 COPY pom.xml /app
